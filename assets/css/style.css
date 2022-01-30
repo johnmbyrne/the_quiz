@@ -28,7 +28,7 @@ body{
 }
 
 .score{
-    width: 80%;
+    width: 75%;
     height: 4rem;
     display: flex;
     justify-content: space-around;
@@ -36,11 +36,34 @@ body{
 }
 
 .question_container{
-    width: 80%;
+    width: 75%;
     height: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid black;
     border-radius: 30px;
+}
+
+.question_container h2{
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 3px;
+}
+
+.game_container{
+    width: 85%;
+    height: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.game_container span{
+    width: 50%;
+    height: 3rem;
+    border: 3px solid black;
+    border-radius: 30px;
+    overflow: hidden;
 }
