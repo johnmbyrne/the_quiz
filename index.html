@@ -8,9 +8,56 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<title>Title</title>
+<title>Home | The Quiz</title>
 </head>
 <body>
+    <h1 class="heading">The Quiz</h1>
+    <div class="quiz_area">
+        <div class="score">
+            <h2>Score: <span id="quiz_score"></span> / 10</h2>
+        </div>
+        <div class="question_container">
+            <h2 id="question_display"></h2>
+        </div>
+        <div class="game_container">
+
+            <div class="modal_container" id="option_modal">
+
+                 <div class="content_container">
+                      <h2>Select an Answer</h2>
+
+                      <div class="button_container">
+                         <button onclick="closeOption()">Continue</button>
+                     </div>
+
+                 </div>
+
+            </div>
+
+             <span>
+                 <input type="radio" id="option1" name="option" class="radio" value="optiona" />
+                 <label for="option_1" class="option" id="option1_label"></label>
+             </span>
+
+
+             <span>
+                 <input type="radio" id="option2" name="option" class="radio" value="optionb" />
+                 <label for="option_2" class="option" id="option2_label"></label>
+             </span>
+
+
+             <span>
+                 <input type="radio" id="option3" name="option" class="radio" value="optionc" />
+                 <label for="option_3" class="option" id="option3_label"></label>
+             </span>
+
+
+             <span>
+                 <input type="radio" id="option4" name="option" class="radio" value="optiond" />
+                 <label for="option_4" class="option" id="option4_label"></label>
+             </span>
+
+    </div>
 
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
