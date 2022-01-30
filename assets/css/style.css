@@ -96,3 +96,24 @@ input[type="radio"] {
 input[type=radio]:checked ~ .option {
     background: rgba(0, 128, 0, 0.3);
 }
+
+.next_button{
+    width: 50%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.next_button button{
+    width: 8rem;
+    height: 2rem;
+    border-radius: 25px;
+    background: none;
+    color: rgb(25, 25, 25);
+    font-weight: 7500;
+    border: 2px solid black;
+    cursor: pointer;
+    outline: none;
+}
+.next_button button:hover{
+    background-color: rgb(143, 93, 93);
+}
