@@ -1,13 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body{
-    height: 100%;
-}
-
+/*   Global styling   */
 
 body{
     font-family: 'aria', sans-serif;
@@ -15,6 +6,15 @@ body{
     color: blue;
     text-align: center;
 }
+
+/* Heading */
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+}
+
+/*  Game Layout  */
 
 .quiz_area{
     width: 40rem;

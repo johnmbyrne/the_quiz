@@ -10,8 +10,11 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <title>Home | The Quiz</title>
 </head>
-<body>
+<body onload="next_question(0)">
     <h1 class="heading">The Quiz</h1>
+
+    <!--  Quiz Area  -->
+
     <div class="quiz_area">
         <div class="score">
             <h2>Score: <span id="quiz_score"></span> / 10</h2>
@@ -61,6 +64,28 @@
 
     <div class="next_button">
         <button onclick="next_question()">Next Question</button>
+    </div>
+
+    <!--  End of Quiz summary -->
+
+    <div class="summary_container" id="score_summary">
+
+        <div class="summary_content">
+
+            <h1>Congratulations, Quiz Completed.</h1>
+
+            <div class="score_details">
+                <p>Questions Attempted : 10</p>
+                <p>Correct Answers : <span id="correct_answers"></span></p>
+                <p>Score : <span id="score_percent"></span>%</p>
+                <p ><span id="comment"></span></p>
+            </div>
+
+            <div class="button_container">
+                <button onclick="final_score()">Continue</button>
+            </div>
+
+        </div>
     </div>
 
     
