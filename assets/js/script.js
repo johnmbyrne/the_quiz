@@ -276,3 +276,65 @@ function checkForAnswer() {
         }
     })
 }
+
+//  Using colours to display correct/incorrect answers on selection
+
+function resetOptionBackground() {
+    const options = document.getElementsByName("option");
+    options.forEach((option) => {
+        document.getElementById(option.labels[0].id).style.backgroundColor = ""
+    })
+}
+
+// Resetting selections for next question
+
+function unCheckRadioButtons() {
+    const options = document.getElementsByName("option");
+    for (let i = 0; i < options.length; i++) {
+        options[i].checked = false;
+    }
+}
+
+// Completing the score box at the end of the quiz
+
+function handleEndGame() {
+    let comment = null
+    let commentColour = null
+
+    if (playerScore <= 4) {
+        comment = "The questions didn't suit you! Don't give up, keep trying."
+        commentColour = "red"
+    }
+    else if (playerScore >= 5 && playerScore < 8) {
+        comment = "Not bad, but not great either, try again."
+        commentColour = "orange"
+    }
+    else if (playerScore >= 8) {
+        comment = "You know your trivia! Well done!."
+        commentColour = "green"
+    }
+    const playerPercent = (playerScore / 10) * 100
+
+    document.getElementById('comment').innerHTML = comment
+    document.getElementById('comment').style.color = commentColour
+    document.getElementById('score_percent').innerHTML = playerPercent
+    document.getElementById('correct_answers').innerHTML = playerScore
+    document.getElementById('score_summary').style.display = "flex"
+
+}
+
+// Close the Score summary and reset the game
+
+function closeScoreModal() {
+    questionNumber = 1
+    playerScore = 0
+    wrongAttempt = 0
+    indexNumber = 0
+    randomQuestions = []
+    nextQuestion(indexNumber)
+    document.getElementById('score_summary').style.display = "none"
+}
+
+function closeOption() {
+    document.getElementById('options').style.display = "none"
+}
