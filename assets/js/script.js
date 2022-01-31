@@ -103,102 +103,102 @@ const generalKnowledge = [
         correctAnswerIndex: 3
     },
     {
-        question: "Ask question?",
+        question: "When did Salt Lake City host the Winter Olympics?",
         options: [
-            "A",
-            "B",
-            "C",
-            "D"
+            "1992",
+            "1998",
+            "2002",
+            "2008"
+        ]
+        correctAnswerIndex: 2
+    },
+    {
+        question: "In the Big Bang Theory, what is the name of Sheldon and Leonard’s neighbour?",
+        options: [
+            "Penny",
+            "Patty",
+            "Lily",
+            "Jessie"
         ]
         correctAnswerIndex: 0
     },
     {
-        question: "Ask question?",
+        question: "When did Hitler invade Poland?",
         options: [
-            "A",
-            "B",
-            "C",
-            "D"
+            "1st September 1939",
+            "11th November 1939",
+            "8th May 1940",
+            "1st December 1940"
         ]
         correctAnswerIndex: 0
     },
     {
-        question: "Ask question?",
+        question: "What is the largest continent in size?",
         options: [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Asia",
+            "Africa",
+            "Europe",
+            "North America"
         ]
         correctAnswerIndex: 0
     },
     {
-        question: "Ask question?",
+        question: "Which French king was nicknamed the “Sun King”?",
         options: [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Louis XVI",
+            "Charlemagne",
+            "Francis I",
+            "Louis XIV"
         ]
-        correctAnswerIndex: 0
+        correctAnswerIndex: 3
     },
     {
-        question: "Ask question?",
+        question: "Who was George W. Bush’ vice president?",
         options: [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Kamala Harris",
+            "Joe Biden",
+            "Dick Cheney",
+            "Al Gore"
         ]
-        correctAnswerIndex: 0
+        correctAnswerIndex: 2
     },
     {
-        question: "Ask question?",
+        question: "Which famous inventor invented the telephone?",
         options: [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Thomas Edison",
+            "Benjamin Franklin",
+            "Alexander Graham Bell",
+            "Nikola Tesla"
         ]
-        correctAnswerIndex: 0
+        correctAnswerIndex: 2
     },
     {
-        question: "Ask question?",
+        question: "If you are born on the 1st of January, which star sign are you?",
         options: [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Scorpio",
+            "Capricorn",
+            "Libra",
+            "Aries"
         ]
-        correctAnswerIndex: 0
+        correctAnswerIndex: 1
     },
     {
-        question: "Ask question?",
+        question: "How many wives had Henry VIII?",
         options: [
-            "A",
-            "B",
-            "C",
-            "D"
+            "1",
+            "3",
+            "4",
+            "6"
         ]
-        correctAnswerIndex: 0
+        correctAnswerIndex: 3
     },
     {
-        question: "Ask question?",
+        question: "In which city is the Juventus Football Club based?",
         options: [
-            "A",
-            "B",
-            "C",
-            "D"
-        ]
-        correctAnswerIndex: 0
-    },
-    {
-        question: "Ask question?",
-        options: [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Turin",
+            "Barcelona",
+            "Manchester",
+            "Marseille"
         ]
         correctAnswerIndex: 0
     }
