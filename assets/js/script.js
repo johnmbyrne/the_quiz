@@ -204,3 +204,15 @@ const generalKnowledge = [
     }
 ]
 
+// Create function and array to select 10 questions at random from the bank
+
+let randomQuestions = []
+
+function handleQuestions() { 
+    while (randomQuestions.length <= 9) {
+        const random = generalKnowledge[Math.floor(Math.random() * generalKnowledge.length)]
+        if (!randomQuestions.includes(random)) {
+            randomQuestions.push(random)
+        }
+    }
+}
