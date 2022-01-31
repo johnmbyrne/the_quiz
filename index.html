@@ -10,85 +10,93 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <title>Home | The Quiz</title>
 </head>
-<body onload="next_question(0)">
-    <h1 class="heading">The Quiz</h1>
+<body onload="nextQuestion(0)">
+    <main>
+        <h1 class="heading">The Quiz!</h1>
 
-    <!--  Quiz Area  -->
+<!-- A container area to store the questions and select the answers from -->
 
-    <div class="quiz_area">
-        <div class="score">
-            <h2>Score: <span id="quiz_score"></span> / 10</h2>
-        </div>
-        <div class="question_container">
-            <h2 id="question_display"></h2>
-        </div>
-        <div class="game_container">
+        <div class="quiz_area">
 
-            <div class="modal_container" id="option_modal">
+            <div class="score">
+                <h2>Score : <span id="quiz_score"></span> / 10</h2>
+            </div>
 
-                 <div class="content_container">
-                      <h2>Select an Answer</h2>
+            <div class="question_container">
+                <h1 id="question_display"></h1>
+            </div>
 
-                      <div class="button_container">
-                         <button onclick="closeOption()">Continue</button>
-                     </div>
+            <div class="game_container">
 
-                 </div>
+               <div class="basic_container" id="options">
+
+                    <div class="content_container">
+                         <h1>Please Pick An Option</h1>
+
+                         <div class="button_container">
+                            <button onclick="closeOption()">Continue</button>
+                        </div>
+
+                    </div>
+
+               </div>
+
+                <span>
+                    <input type="radio" id="option1" name="option" class="radio" value="optionA" />
+                    <label for="option1" class="option" id="option1_label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option2" name="option" class="radio" value="optionB" />
+                    <label for="option2" class="option" id="option2_label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option3" name="option" class="radio" value="optionC" />
+                    <label for="option3" class="option" id="option3_label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option4" name="option" class="radio" value="optionD" />
+                    <label for="option4" class="option" id="option4_label"></label>
+                </span>
+
 
             </div>
 
-             <span>
-                 <input type="radio" id="option1" name="option" class="radio" value="optiona" />
-                 <label for="option_1" class="option" id="option1_label"></label>
-             </span>
-
-
-             <span>
-                 <input type="radio" id="option2" name="option" class="radio" value="optionb" />
-                 <label for="option_2" class="option" id="option2_label"></label>
-             </span>
-
-
-             <span>
-                 <input type="radio" id="option3" name="option" class="radio" value="optionc" />
-                 <label for="option_3" class="option" id="option3_label"></label>
-             </span>
-
-
-             <span>
-                 <input type="radio" id="option4" name="option" class="radio" value="optiond" />
-                 <label for="option_4" class="option" id="option4_label"></label>
-             </span>
-
-    </div>
-
-    <div class="next_button">
-        <button onclick="next_question()">Next Question</button>
-    </div>
-
-    <!--  End of Quiz summary -->
-
-    <div class="summary_container" id="score_summary">
-
-        <div class="summary_content">
-
-            <h1>Congratulations, Quiz Completed.</h1>
-
-            <div class="score_details">
-                <p>Questions Attempted : 10</p>
-                <p>Correct Answers : <span id="correct_answers"></span></p>
-                <p>Score : <span id="score_percent"></span>%</p>
-                <p ><span id="comment"></span></p>
-            </div>
-
-            <div class="button_container">
-                <button onclick="final_score()">Continue</button>
+            <div class="next_button">
+                <button onclick="moveNextQuestion()">Next Question</button>
             </div>
 
         </div>
-    </div>
 
-    
+<!-- A score box for when quiz ends -->
+
+        <div class="basic_container" id="score_summary">
+
+            <div class="content_container">
+
+                <h1>Well done, you've finished the quiz!  Here's your score:</h1>
+
+                <div class="score_details">
+                    <p>Questions Attempted : 10</p>
+                    <p>Correct Answers : <span id="correct_answers"></span></p>
+                    <p>Score : <span id="score_percent"></span>%</p>
+                    <p ><span id="comment"></span></p>
+                </div>
+
+                <div class="button_container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+       
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 <script src="assets/js/script.js"></script>
