@@ -229,10 +229,10 @@ function nextQuestion(index) {
     document.getElementById("question_display").innerHTML = questionNumber
     document.getElementById("quiz_score").innerHTML = playerScore
     document.getElementById("question_display").innerHTML = currentQuestion.question;
-    document.getElementById("option1_label").innerHTML = currentQuestion.[0];
-    document.getElementById("option2_label").innerHTML = currentQuestion.[1];
-    document.getElementById("option3_label").innerHTML = currentQuestion.[2];
-    document.getElementById("option4_label").innerHTML = currentQuestion.[3];
+    document.getElementById("option1_label").innerHTML = currentQuestion.options[0];
+    document.getElementById("option2_label").innerHTML = currentQuestion.options[1];
+    document.getElementById("option3_label").innerHTML = currentQuestion.options[2];
+    document.getElementById("option4_label").innerHTML = currentQuestion.options[3];
 }
 
 // checking if the correct answer was selected
