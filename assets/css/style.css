@@ -202,3 +202,38 @@ input[type=radio]:checked ~ .option {
 .button_container button:hover{
     background-color: rgb(107, 106, 106);
 }
+
+/*  Mobile phone responsiveness */
+
+@media(min-width : 250px) and (max-width : 350px){
+    .quiz_area{
+        width: 90%;
+        height: 80vh;
+     }
+     .score h2{
+        font-size: 0.8rem;
+     }
+
+     .question_container{
+        height: 6rem;
+     }
+     .question_container h2{
+       font-size: 0.9rem;
+    }
+
+    .game_container span{
+        width: 90%;
+        height: 2.5rem;
+    }
+    .game_container span label{
+        font-size: 0.8rem;
+    }
+    .content_container{
+        width: 90%;
+        height: 25rem;
+    }
+
+    .content_container h2{
+        font-size: 1.1rem;
+    }
+}
