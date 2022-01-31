@@ -203,7 +203,7 @@ input[type=radio]:checked ~ .option {
     background-color: rgb(107, 106, 106);
 }
 
-/*  Mobile phone responsiveness */
+/*  Small Screen (e.g. Mobile phone) responsiveness */
 
 @media(min-width : 250px) and (max-width : 350px){
     .quiz_area{
@@ -237,3 +237,34 @@ input[type=radio]:checked ~ .option {
         font-size: 1.1rem;
     }
 }
+
+/*  Medium Screen (e.g. iPad-Tablet) responsiveness */
+
+@media(min-width : 350px) and (max-width : 700px){
+    .quiz_area{
+        width: 90%;
+        height: 80vh;
+     }
+     .score h2{
+         font-size: 1rem;
+     }
+ 
+     .question_container{
+         height: 8rem;
+     }
+ 
+     .question_container h2{
+         font-size: 0.9rem;
+      }
+ 
+     .game_container span{
+         width: 90%;
+     }
+     .content_container{
+         width: 90%;
+         height: 25rem;
+     }
+     .content_container h2{
+         font-size: 1.1rem;
+     }
+ }
