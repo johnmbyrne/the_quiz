@@ -179,3 +179,26 @@ input[type=radio]:checked ~ .option {
     color: white;
     text-align: center;
 }
+
+.button_container{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_container button{
+    width: 10rem;
+    height: 2rem;
+    background: none;
+    outline: none;
+    border: 3px solid rgb(252, 242, 241);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.button_container button:hover{
+    background-color: rgb(107, 106, 106);
+}
