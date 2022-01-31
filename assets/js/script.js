@@ -216,3 +216,63 @@ function handleQuestions() {
         }
     }
 }
+
+//  Set up functions and variables to display questions and answer options
+
+let questionNumber = 1
+let playerScore = 0
+let indexNumber = 0
+
+function nextQuestion(index) {
+    handleQuestions()
+    const currentQuestion = randomQuestions[index]
+    document.getElementById("question_display").innerHTML = questionNumber
+    document.getElementById("quiz_score").innerHTML = playerScore
+    document.getElementById("question_display").innerHTML = currentQuestion.question;
+    document.getElementById("option1_label").innerHTML = currentQuestion.[0];
+    document.getElementById("option2_label").innerHTML = currentQuestion.[1];
+    document.getElementById("option3_label").innerHTML = currentQuestion.[2];
+    document.getElementById("option4_label").innerHTML = currentQuestion.[3];
+}
+
+// checking if the correct answer was selected
+
+function checkForAnswer() {
+    const currentQuestion = randomQuestions[indexNumber]
+    const currentQuestionAnswer = currentQuestion.correctAnswerIndex
+    const options = document.getElementsByName("option");
+    let correctOption = null
+
+    options.forEach((option) => {
+        if (option.value === currentQuestionAnswer) {
+            correctOption = option.labels[0].id
+        }
+    })
+
+    // Check to make sure something has been selected
+
+    if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
+        document.getElementById('options').style.display = "flex"
+    }
+
+     options.forEach((option) => {
+        if (option.checked === true && option.value === currentQuestionAnswer) {
+            document.getElementById(correctOption).style.backgroundColor = "green"
+            playerScore++
+            indexNumber++
+            setTimeout(() => {
+                questionNumber++
+            }, 1000)
+        }
+
+        else if (option.checked && option.value !== currentQuestionAnswer) {
+            const wrongLabelId = option.labels[0].id
+            document.getElementById(wrongLabelId).style.backgroundColor = "red"
+            document.getElementById(correctOption).style.backgroundColor = "green"
+            indexNumber++
+            setTimeout(() => {
+                questionNumber++
+            }, 1000)
+        }
+    })
+}
