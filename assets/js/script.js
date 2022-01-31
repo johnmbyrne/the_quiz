@@ -3,11 +3,14 @@
 const generalKnowledge = [
     {
         question: "Ask question?",
-        answerA: "A",
-        answerB: "B",
-        answerC: "C",
-        answerD: "D",
-        correctAnswer: "answerA"
+        options: [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+        correctAnswerIndex: 0
     },
-    
+
 ]
+
