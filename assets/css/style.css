@@ -162,7 +162,7 @@ input[type=radio]:checked ~ .option {
 .content_container h2{
     font-size: 1.1rem;
     height: 3rem;
-    color: lightgray;
+    color: blue;
     text-align: center;
 }
 
