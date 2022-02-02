@@ -277,6 +277,22 @@ function checkForAnswer() {
     })
 }
 
+//  Move to next question when button is pressed
+
+function moveNextQuestion() {
+    checkForAnswer()
+    unCheckRadioButtons()
+    setTimeout(()=> {
+        if (indexNumber <= 9) {
+            nextQuestion(indexNumber)
+        }
+        else {
+            handleEndGame()
+        }
+        resetOptionBackground()
+    }, 1000);
+}
+
 //  Using colours to display correct/incorrect answers on selection
 
 function resetOptionBackground() {
