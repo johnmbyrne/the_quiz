@@ -186,7 +186,7 @@ let indexNumber = 0
 function nextQuestion(index) {
     handleQuestions()
     const currentQuestion = randomQuestions[index]
-    document.getElementById("question_display").innerHTML = questionNumber
+    document.getElementById("question_number").innerHTML = questionNumber
     document.getElementById("quiz_score").innerHTML = playerScore
     document.getElementById("question_display").innerHTML = currentQuestion.question;
     document.getElementById("option1_label").innerHTML = currentQuestion.answerA;
