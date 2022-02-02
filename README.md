@@ -1,8 +1,8 @@
 # The Quiz
 
-Corvus Consulting Ltd is a management consultancy company. This is an itinial concept website consisting of three accessible pages, and one page accessible on sign-up for a monthly newsletter. The website will allow potential customers to find the company online, see a brief introduction of what the company offers and testamonials, and sign up for a newsletter.
+The Quiz is a simple general knowledge trivia page that will allow players to test their trivia knowledge agaist a series of random questions.
 
-When viewers sign up for the newsletter, they are added to a CRM list, which means the company can ultimately engage in two-way communication with them.  Each page also contains links to email and the company's LinkedIn page in the footer.  The ultimate goal of the website is to give just enough information to tweak the interest of potential clients and get them to initiate and allow two-way communication in some form. 
+When a player completes the 10 questions their total score of correct answers is converted to a percentage and a comment based on their score range is made.
 
 ![Responsice Mockup](assets/media/mockup.png)
 

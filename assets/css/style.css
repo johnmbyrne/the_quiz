@@ -1,23 +1,23 @@
 /*   Global styling   */
 
-body{
-    font-family: 'aria', sans-serif;
+body {
+    font-family: "aria", sans-serif;
     color: blue;
     text-align: center;
 }
 
 /* Heading */
 
-.heading{
+.heading {
     text-align: center;
     font-size: 5rem;
-    text-shadow:  2px 4px darkgrey;
+    text-shadow: 2px 4px darkgrey;
     background-color: white;
 }
 
 /*  Game Layout  */
 
-main{
+main {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -26,7 +26,7 @@ main{
     align-items: center;
 }
 
-.quiz_area{
+.quiz_area {
     width: 40rem;
     height: 30rem;
     background-color: lightgrey;
@@ -37,7 +37,7 @@ main{
     border-radius: 30px;
 }
 
-.score{
+.score {
     width: 75%;
     height: 4rem;
     display: flex;
@@ -45,11 +45,11 @@ main{
     align-items: center;
 }
 
-.score h2{
+.score h2 {
     font-size: 1.1rem;
 }
 
-.question_container{
+.question_container {
     width: 75%;
     height: 8rem;
     display: flex;
@@ -59,13 +59,13 @@ main{
     border-radius: 30px;
 }
 
-.question_container h2{
+.question_container h2 {
     font-size: 1.1rem;
     text-align: center;
     padding: 3px;
 }
 
-.game_container{
+.game_container {
     width: 85%;
     height: 12rem;
     display: flex;
@@ -74,7 +74,7 @@ main{
     justify-content: space-around;
 }
 
-.game_container span{
+.game_container span {
     width: 50%;
     height: 3rem;
     border: 3px solid black;
@@ -82,7 +82,7 @@ main{
     overflow: hidden;
 }
 
-span label{
+span label {
     width: 100%;
     height: 100%;
     display: flex;
@@ -94,7 +94,7 @@ span label{
     color: rgb(64, 64, 64);
 }
 
-span label:hover{
+span label:hover {
     -ms-transform: scale(1.25);
     -webkit-transform: scale(1.25);
     transform: scale(1.25);
@@ -106,18 +106,17 @@ input[type="radio"] {
     display: none;
 }
 
-
-input[type=radio]:checked ~ .option {
+input[type="radio"]:checked ~ .option {
     background: cyan;
 }
 
-.next_button{
+.next_button {
     width: 50%;
     height: 3rem;
     display: flex;
     justify-content: center;
 }
-.next_button button{
+.next_button button {
     width: 8rem;
     height: 2rem;
     border-radius: 25px;
@@ -128,27 +127,27 @@ input[type=radio]:checked ~ .option {
     cursor: pointer;
     outline: none;
 }
-.next_button button:hover{
+.next_button button:hover {
     background-color: yellow;
 }
-.basic_container{
+.basic_container {
     display: none;
     position: fixed;
-    z-index: 1; 
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     -webkit-animation: fadeIn 1.2s ease-in-out;
     animation: fadeIn 1.2s ease-in-out;
 }
 
-.content_container{
+.content_container {
     height: 20rem;
     width: 25rem;
     background-color: rgb(68, 68, 68);
@@ -159,14 +158,14 @@ input[type=radio]:checked ~ .option {
     border-radius: 30px;
 }
 
-.content_container h2{
+.content_container h2 {
     font-size: 1.1rem;
     height: 3rem;
     color: white;
     text-align: center;
 }
 
-.score_details{
+.score_details {
     width: 15rem;
     height: 10rem;
     display: flex;
@@ -175,12 +174,12 @@ input[type=radio]:checked ~ .option {
     justify-content: space-around;
 }
 
-.score_details p{
+.score_details p {
     color: white;
     text-align: center;
 }
 
-.button_container{
+.button_container {
     height: 2rem;
     width: 100%;
     display: flex;
@@ -188,7 +187,7 @@ input[type=radio]:checked ~ .option {
     justify-content: center;
 }
 
-.button_container button{
+.button_container button {
     width: 10rem;
     height: 2rem;
     background: none;
@@ -199,72 +198,72 @@ input[type=radio]:checked ~ .option {
     cursor: pointer;
     border-radius: 30px;
 }
-.button_container button:hover{
+.button_container button:hover {
     background-color: rgb(107, 106, 106);
 }
 
 /*  Small Screen (e.g. Mobile phone) responsiveness */
 
-@media(min-width : 250px) and (max-width : 350px){
-    .quiz_area{
+@media (min-width: 250px) and (max-width: 350px) {
+    .quiz_area {
         width: 90%;
         height: 80vh;
-     }
-     .score h2{
+    }
+    .score h2 {
         font-size: 0.8rem;
-     }
-
-     .question_container{
-        height: 6rem;
-     }
-     .question_container h2{
-       font-size: 0.9rem;
     }
 
-    .game_container span{
+    .question_container {
+        height: 6rem;
+    }
+    .question_container h2 {
+        font-size: 0.9rem;
+    }
+
+    .game_container span {
         width: 90%;
         height: 2.5rem;
     }
-    .game_container span label{
+    .game_container span label {
         font-size: 0.8rem;
     }
-    .content_container{
+    .content_container {
         width: 90%;
         height: 25rem;
     }
 
-    .content_container h2{
+    .content_container h2 {
         font-size: 1.1rem;
     }
 }
 
 /*  Medium Screen (e.g. iPad-Tablet) responsiveness */
 
-@media(min-width : 350px) and (max-width : 700px){
-    .quiz_area{
+@media (min-width: 350px) and (max-width: 700px) {
+    .quiz_area {
         width: 90%;
         height: 80vh;
-     }
-     .score h2{
-         font-size: 1rem;
-     }
- 
-     .question_container{
-         height: 8rem;
-     }
- 
-     .question_container h2{
-         font-size: 0.9rem;
-      }
- 
-     .game_container span{
-         width: 90%;
-     }
-     .content_container{
-         width: 90%;
-         height: 25rem;
-     }
-     .content_container h2{
-         font-size: 1.1rem;
-     }
- }
+    }
+    .score h2 {
+        font-size: 1rem;
+    }
+
+    .question_container {
+        height: 8rem;
+    }
+
+    .question_container h2 {
+        font-size: 0.9rem;
+    }
+
+    .game_container span {
+        width: 90%;
+    }
+    .content_container {
+        width: 90%;
+        height: 25rem;
+    }
+    .content_container h2 {
+        font-size: 1.1rem;
+    }
+}
