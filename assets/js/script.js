@@ -9,7 +9,7 @@ const generalKnowledge = [
             "Rome",
             "Naples",
             "Milan"
-        ]
+        ],
         correctAnswerIndex: 1
     },
     {
@@ -19,7 +19,7 @@ const generalKnowledge = [
             "Kaley Cuoco",
             "Jennifer Aniston",
             "Alyson Hannigan"
-        ]
+        ],
         correctAnswerIndex: 0
     },
     {
@@ -29,7 +29,7 @@ const generalKnowledge = [
             "King’s Canyon, Australia",
             "Grand Canyon, USA",
             "Fjaðrárgljúfur Canyon, Iceland"
-        ]
+        ],
         correctAnswerIndex: 2
     },
     {
@@ -39,7 +39,7 @@ const generalKnowledge = [
             "4,525 miles",
             "5,525 miles",
             "6,525 miles"
-        ]
+        ],
         correctAnswerIndex: 2
     },
     {
@@ -49,7 +49,7 @@ const generalKnowledge = [
             "Mount Vesuvius",
             "Mouna Loa",
             "Mount Batur"
-        ]
+        ],
         correctAnswerIndex: 2
     },
     {
@@ -59,7 +59,7 @@ const generalKnowledge = [
             "21 January 1934",
             "21 January 1944",
             "21 January 1954"
-        ]
+        ],
         correctAnswerIndex: 0
     },
     {
@@ -69,7 +69,7 @@ const generalKnowledge = [
             "South Dakota",
             "Indiana",
             "Tennessee"
-        ]
+        ],
         correctAnswerIndex: 3
     },
     {
@@ -79,7 +79,7 @@ const generalKnowledge = [
             "1960",
             "1970",
             "1980"
-        ]
+        ],
         correctAnswerIndex: 1
     },
     {
@@ -89,7 +89,7 @@ const generalKnowledge = [
             "Uffizi Museum",
             "British Museum",
             "Metropolitan Museum of Art"
-        ]
+        ],
         correctAnswerIndex: 0
     },
     {
@@ -99,7 +99,7 @@ const generalKnowledge = [
             "Barcelona",
             "Santiago",
             "Madrid"
-        ]
+        ],
         correctAnswerIndex: 3
     },
     {
@@ -109,7 +109,7 @@ const generalKnowledge = [
             "1998",
             "2002",
             "2008"
-        ]
+        ],
         correctAnswerIndex: 2
     },
     {
@@ -119,7 +119,7 @@ const generalKnowledge = [
             "Patty",
             "Lily",
             "Jessie"
-        ]
+        ],
         correctAnswerIndex: 0
     },
     {
@@ -129,7 +129,7 @@ const generalKnowledge = [
             "11th November 1939",
             "8th May 1940",
             "1st December 1940"
-        ]
+        ],
         correctAnswerIndex: 0
     },
     {
@@ -139,7 +139,7 @@ const generalKnowledge = [
             "Africa",
             "Europe",
             "North America"
-        ]
+        ],
         correctAnswerIndex: 0
     },
     {
@@ -149,7 +149,7 @@ const generalKnowledge = [
             "Charlemagne",
             "Francis I",
             "Louis XIV"
-        ]
+        ],
         correctAnswerIndex: 3
     },
     {
@@ -159,7 +159,7 @@ const generalKnowledge = [
             "Joe Biden",
             "Dick Cheney",
             "Al Gore"
-        ]
+        ],
         correctAnswerIndex: 2
     },
     {
@@ -169,7 +169,7 @@ const generalKnowledge = [
             "Benjamin Franklin",
             "Alexander Graham Bell",
             "Nikola Tesla"
-        ]
+        ],
         correctAnswerIndex: 2
     },
     {
@@ -179,7 +179,7 @@ const generalKnowledge = [
             "Capricorn",
             "Libra",
             "Aries"
-        ]
+        ],
         correctAnswerIndex: 1
     },
     {
@@ -189,7 +189,7 @@ const generalKnowledge = [
             "3",
             "4",
             "6"
-        ]
+        ],
         correctAnswerIndex: 3
     },
     {
@@ -199,7 +199,7 @@ const generalKnowledge = [
             "Barcelona",
             "Manchester",
             "Marseille"
-        ]
+        ],
         correctAnswerIndex: 0
     }
 ]
