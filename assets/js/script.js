@@ -179,7 +179,7 @@ function handleQuestions() {
 
 //  Set up functions and variables to display questions and answer options
 
-let questionNumber = 1
+let questionNumber = 10
 let playerScore = 0
 let indexNumber = 0
 
@@ -215,13 +215,15 @@ function checkForAnswer() {
         document.getElementById('options').style.display = "flex"
     }
 
+//  Using colours to display correct/incorrect answers on selection
+
      options.forEach((option) => {
         if (option.checked === true && option.value === currentQuestionAnswer) {
             document.getElementById(correctOption).style.backgroundColor = "green"
             playerScore++
             indexNumber++
             setTimeout(() => {
-                questionNumber++
+                questionNumber--
             }, 1000)
         }
 
@@ -231,7 +233,7 @@ function checkForAnswer() {
             document.getElementById(correctOption).style.backgroundColor = "green"
             indexNumber++
             setTimeout(() => {
-                questionNumber++
+                questionNumber--
             }, 1000)
         }
     })
@@ -252,8 +254,6 @@ function moveNextQuestion() {
         resetOptionBackground()
     }, 1000);
 }
-
-//  Using colours to display correct/incorrect answers on selection
 
 function resetOptionBackground() {
     const options = document.getElementsByName("option");
@@ -302,7 +302,7 @@ function handleEndGame() {
 // Close the Score summary and reset the game
 
 function closeScoreModal() {
-    questionNumber = 1
+    questionNumber = 10
     playerScore = 0
     wrongAttempt = 0
     indexNumber = 0
