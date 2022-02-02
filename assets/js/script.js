@@ -298,7 +298,6 @@ function handleEndGame() {
 function closeScoreModal() {
     questionNumber = 10;
     playerScore = 0;
-    wrongAttempt = 0;
     indexNumber = 0;
     randomQuestions = [];
     nextQuestion(indexNumber);
