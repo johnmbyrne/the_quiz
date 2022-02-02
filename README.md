@@ -4,88 +4,62 @@ The Quiz is a simple general knowledge trivia page that will allow players to te
 
 When a player completes the 10 questions their total score of correct answers is converted to a percentage and a comment based on their score range is made.
 
-![Responsice Mockup](assets/media/mockup.png)
+![Responsice Mockup](assets/images/mockup.png)
 
 ## Features 
 
-The following features are included in the website.  Ultimately they aim to make it easy to get around the site, and to allow the user to always know where they are.
+The following features are included on the webpage.  Ultimately they aim to make it easy to complete the quiz.
 
 ### Existing Features
 
-- __Navigation Bar__
+- __Quiz Box__
 
-  - All pages contain a fully responsive navigation bar, including links to the Logo, Home page, Solutions and Resources pages. This is identical on each page to allow for easy navigation and avoid confusion.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
-  - The current page is clearly highlighted for the user to know where they are. The only exception to this is the 'confirmation' page on sign-up to the newsletter as this page exists outside the standard menu system (to ensure it is only visable after sign-up).  The navigation bar is present in full, but now pages are highlighted on it as active.
+  - The quiz box is the active part of the page.  It is clearly maked and stands out from the rest of the page.  the score (out of 10) and the number of questions remaining are clearly visable so that the player is fully aware of how they are doing and how many more questions they've to answer before they finish.  The selected answer is highlighted Cyan to make it obvious, the Next Question button turns yellow when it is hovered over.  When Next Question is pressed, if the selected answer is correct the button will turn green for one second, the Score will increase by 1 point, the Questions remaining will decrease by 1 point, and the next question will load.  If the selected answer is wrong, the button will turn red and the button of the correct answer will turn green, the Score will remain the same and the Questions remaining will decrease by 1 point.  This will continue until all 10 have been asked.  After the 10th question, the Completion Box (below) will load.
 
-![Nav Bar](assets/media/navbar.png)
+![Quiz Box Area](assets/images/quiz_box.png)
 
-- __The landing page hero-image__
+  - If no answer is selected and the Next Question button is pressed the player will get a dialog box asking the to pick an option:
 
-  - The landing includes a design picture with text overlay to clearly show that the website is for a Management Consulting services company. 
-  - The picture expands to fill the screen to draw the viewers attention to it. The animation livens up the page, and helps to put the service provided at the forefront of the page initially, before settling in and allowing the viewer to concentrate on the rest of the page.
+  ![Please Pick an Option dialog](assets/images/please_pick.png)
 
-![Landing Page Hero Image](assets/media/hero_image.jpg)
+- __Completion Box__
 
-- __Our Mission Section__
+  - On completing the quiz a summary box will appear giving a final score and a comment.  There are three versions, depending on the score range the player achieves.
 
-  - The 'Our Mission' section will allow the user to read a brief introduction to what the company does, and some examples of how it does it. 
-  - The viewer will know exactly what types of management consultancy the company offers, and some of the methodologies employed.
-
-- __Our Affiliations Section__
-
-  - As a professional services company, affiliations are important as they provide a form of assurance that the quality of service is high for any potential clients. 
-  - This section contains the logos of the main professional affiliations that the company has.  Each logo is clickable and will bring the viewer to the relevant external website in a new browser tab. 
-
-![Meetup Times](assets/media/affiliations.png)
-
-- __The Footer__ 
-
-  - The footer section includes links to send an email to the company, and the company's LinkedIn page. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the viewer and the company as it allows for the potential establishment of two-way communication.
-  - The footer also contains a copyright notice, as this is generally standard practice for professional services websites.
-  - The footer appears on all pages. It is coloured the same shade of blue to match the navigation bar buttons, and allow for a nice bookending of the page.
-
-![Footer](assets/media/footer.png)
-
-- __Solutions__
-
-  - The solutions page currently provides a short blog entry detailing one of the most common issues the company tends to deal with as an example to the viewer. 
-  - The page also includes two embedded YouTube videos giving testamonials from other businesses who have successfully used the main methodology that the company provides. 
-
-![Solutions](assets/media/solutions.png)
-
-- __Resources__
-
-  - This page contains some free PDF downloads and a newsletter sign-up section.
-  - The downloads offer some value to the viewer that they could find useful, and may lead to them wanting to learn more information by contacting the company.
-  - The newsletter sign-up is GDPR compliant, and will add the viewers name and email details to the company's CRM for future contact. 
-
-![Resources](assets/media/resources.png)
+![Score 0-4](assets/images/poor.png)
+![Score 5-7](assets/images/average.png)
+![Score 8-10](assets/images/good.png)
 
 ### Features Left to Implement
 
-- An 'About' page will need to be added.
-- A contact form will be added also, for those who can't use the email link (for example, their preferred email is a browser based one, not desktop).
-- Pages giving a higher level of detail about the services provided will be added.
+- A larger selection of questions can be added to the question bank.
+- The quiz can be split over more than one page, with different quiz themes (e.g. Movies, Sport etc.) on each page drawing from different question banks.
 
 ## Testing 
 
-All features and links on the website were tested manually and were successful. They were tested by the developer, and by an independent third party developer, and by a non-technical user with now development experience.
+All features and links on the website were tested manually and were successful. They were tested by the developer, and by an independent third party developer, and by two non-technical users with now development experience.
 
 The website was tested for responsiveness both manually on different sized screens and with developer tools (Inspect Element). Various browsers (Safari, Firefox, Chrome, and Edge) were used as well.  All pages and features worked well.
 
-Initially the YouTube videos, hero image and Navigation Bar did not scale down to phone sixed screens well. This was ultimately overcome by installing Bootstrap CDN and rewriting the code around using Bootstrap's container elements to replace the CSS code involved.
+Initially the quiz box was not populating with questions and answers.  This was due to a missing function.  The function name had been created, but the actual function had not.  This was rectified, and the quiz box populated with the intial question and answer selection as expected.
 
-Most other issues were dealt with via trial and error.  There were no major bugs apart for the scaling mentioned above as the website is not overly complicated.
+Another error arose in that when the selection was made, the program sould not check the answer and move on.  this was due to a change in formatting that had been implemented after the project started to refer to the index number of the answers to check for the correct one.  To rectify this error, the original methodology was returned to which did not rely on indices but instead relied on simple strings to compare the given answer to the correct one.
+
+A final error was discovered when some questions caused the quiz to stop working.  This was due to capital letter being used in the html code that was lower case in the Javascript code.  The html code was corrected to rectify this.
+
+Most issues were dealt with via trial and error.  There were no major bugs apart from those mentioned above as the quiz is not overly complicated.
 
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjohnmbyrne.github.io%2Fcorvus_consulting%2F)
+  - One error was returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjohnmbyrne.github.io%2Fthe_quiz%2F). This was left as-is because the backgroung image worked better when put in the html code rather than the css code.
 - CSS
-  - 60 errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjohnmbyrne.github.io%2Fcorvus_consulting%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css). These relate to the AOS code used to achieve the Hero Image animation. they still exist as I could not find a specific issue in the parts of the code I had edited.
-  - The CSS validator also returned 291 warning, but they relate to the Bootstrap code, and are just stating that they are not statically checked.
+  - No errors were found when passing through the official CSS [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjohnmbyrne.github.io%2Fthe_quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
+- JavaScript
+  - No issues were found when passed through the [JSHint website](https://jshint.com/).
+- Accessibility
+  - The page received a 100% score on [Web Accessibility](https://www.webaccessibility.com/)
+    ![Accessibility Score](assets/images/accessibility.png)
 
 ### Unfixed Bugs
 
@@ -98,27 +72,17 @@ Apart from those mentioned above, there are no other unfixed bugs. One of the sh
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://johnmbyrne.github.io/corvus_consulting/ 
+The live link can be found here - https://johnmbyrne.github.io/the_quiz/ 
 
 ## Credits 
 
-- Code Institute coding course, and the Love Running walkthrough helped considerable in joining up all the code elements.
+- Code Institute coding course, and the Love Maths walkthrough helped considerably in joining up all the code elements.
 - Akshat Garg mentor gave good feedback and advise to get the project going.
-- Dante Healy provided good feedback and advice, especially on the use of Bootstrap CDN.
+- The general idea for the quiz came from [The Journal](https://www.thejournal.ie/gender-equality-4-5669124-Feb2022/). This is an example quiz, they are frequently done.  This was combined with the Love Maths layout to remove the need for the player to have to scroll down through the quiz.
 
 ### Content 
 
-- Instructions on how to implement newsletter was provided by [Send In Blue](https://www.sendinblue.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-- YouTube videos and PDFs were provided by [The ReWild Group](https://www.rewildgroup.com/)
-
-### Media
-
-- The Hero Image used on the home page was provided by https://pixabay.com/
-- The images used on the Resporces page were provided by The ReWild Group
-- The Solutions image was provided by [Yay Images](https://yayimages.com/)
-
-### Code Snippets
-
-- Code snippets were taken and edited from [GetBootstrap](https://getbootstrap.com/) for the Navigation Bar and the Modal button on the Newsletter Subscription setting
-- The Hero Image animation was achieved by the code snippet taken from [Michael Snik](https://michalsnik.github.io/aos/)
+- The Favicon Quiz icons was created by Freepik - [Flaticons](https://www.flaticon.com/free-icons/quiz)
+- The backfround image was taken from [The Shakespeare Hospice](https://www.theshakespearehospice.org.uk/Content/uploads/images/Quiz.jpg)
+- The questions were provided by [Quiz Trivia Games](https://www.quiztriviagames.com/multiple-choice-trivia-questions/)
+- The code on all three pages (html, css, and JavaScript) was formated by [Web Formatter](https://webformatter.com/)
