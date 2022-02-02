@@ -2,7 +2,6 @@
 
 body{
     font-family: 'aria', sans-serif;
-    background-color: white;
     color: blue;
     text-align: center;
 }
@@ -11,7 +10,9 @@ body{
 
 .heading{
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
+    text-shadow:  2px 4px darkgrey;
+    background-color: white;
 }
 
 /*  Game Layout  */
@@ -28,7 +29,7 @@ main{
 .quiz_area{
     width: 40rem;
     height: 30rem;
-    background-color: lightgray;
+    background-color: lightgrey;
     display: flex;
     flex-direction: column;
     align-items: center;
