@@ -18,7 +18,7 @@ The following features are included on the webpage.  Ultimately they aim to make
 
 ![Quiz Box Area](assets/images/quiz_box.png)
 
-  - If no answer is selected and the Next Question button is pressed the player will get a dialog box asking the to pick an option:
+  - If no answer is selected and the Next Question button is pressed the player will get a dialog box asking them to pick an option:
 
   ![Please Pick an Option dialog](assets/images/please_pick.png)
 
@@ -33,26 +33,28 @@ The following features are included on the webpage.  Ultimately they aim to make
 ### Features Left to Implement
 
 - A larger selection of questions can be added to the question bank.
-- The quiz can be split over more than one page, with different quiz themes (e.g. Movies, Sport etc.) on each page drawing from different question banks.
+- The quiz can be split with different quiz themes (e.g. Movies, Sport etc.) on each page drawing from different question banks to be selected by the player.
 
 ## Testing 
 
 All features and links on the website were tested manually and were successful. They were tested by the developer, and by an independent third party developer, and by two non-technical users with now development experience.
 
-The website was tested for responsiveness both manually on different sized screens and with developer tools (Inspect Element). Various browsers (Safari, Firefox, Chrome, and Edge) were used as well.  All pages and features worked well.
+The website was tested for responsiveness both manually on different sized screens and with developer tools (Inspect Element). Various browsers (Safari, Firefox, Chrome, Brave, and Edge) and Operating Sytems (Mac OS, iOS, iPad OS, and Windows 11)were used as well.  All pages and features worked well.
 
 Initially the quiz box was not populating with questions and answers.  This was due to a missing function.  The function name had been created, but the actual function had not.  This was rectified, and the quiz box populated with the intial question and answer selection as expected.
 
-Another error arose in that when the selection was made, the program sould not check the answer and move on.  this was due to a change in formatting that had been implemented after the project started to refer to the index number of the answers to check for the correct one.  To rectify this error, the original methodology was returned to which did not rely on indices but instead relied on simple strings to compare the given answer to the correct one.
+Another error arose in that when the selection was made, the program sould not check the answer and move on.  This was due to a change in formatting that had been implemented after the project started to refer to the index number of the answers to check for the correct one.  To rectify this error, the original methodology was returned to which did not rely on indices but instead relied on simple strings to compare the given answer to the correct one.
 
-A final error was discovered when some questions caused the quiz to stop working.  This was due to capital letter being used in the html code that was lower case in the Javascript code.  The html code was corrected to rectify this.
+A final error was discovered when some questions caused the quiz to stop working.  This was due to capital letter being used in the html code that was lower case in the JavaScript code.  The html code was corrected to rectify this.
+
+One error was returned when passing through the official W3C validator. Using the html code to set the background image was deemed obsolete and it recommended using css code instead. This was done last.
 
 Most issues were dealt with via trial and error.  There were no major bugs apart from those mentioned above as the quiz is not overly complicated.
 
 ### Validator Testing 
 
 - HTML
-  - One error was returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjohnmbyrne.github.io%2Fthe_quiz%2F). This was left as-is because the backgroung image worked better when put in the html code rather than the css code.
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjohnmbyrne.github.io%2Fthe_quiz%2F).
 - CSS
   - No errors were found when passing through the official CSS [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjohnmbyrne.github.io%2Fthe_quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 - JavaScript
