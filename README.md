@@ -47,7 +47,7 @@ Another error arose in that when the selection was made, the program sould not c
 
 A final error was discovered when some questions caused the quiz to stop working.  This was due to capital letter being used in the html code that was lower case in the JavaScript code.  The html code was corrected to rectify this.
 
-One error was returned when passing through the official W3C validator. Using the html code to set the background image was deemed obsolete and it recommended using css code instead. This was done last.
+One error was returned when passing through the official W3C validator. Using the html code to set the background image was deemed obsolete and it recommended using css code instead. This was done last.  There were issues with finding the solution to this problem as it initially worked in the preview browser window, but not in the actual deployed webpage.  As a result I had to do several commits to try each potential solution on the deployed page before succeeding,
 
 Most issues were dealt with via trial and error.  There were no major bugs apart from those mentioned above as the quiz is not overly complicated.
 
