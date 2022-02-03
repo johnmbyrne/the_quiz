@@ -4,7 +4,7 @@ body {
     font-family: "aria", sans-serif;
     color: blue;
     text-align: center;
-    background-image: url(/assets/images/quiz.jpg);
+    background: url(/assets/images/quiz.jpg);
     background-color: whitesmoke;
 }
 
